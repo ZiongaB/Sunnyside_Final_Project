@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>Sunnyside Cafe Menu</title>
+		<link href="css/menu.css" rel="stylesheet">
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<div class="disclaimer">
+			<p>Disclaimer: This is not the actual Sunnyside Cafe Website. This is a student project to redesign the site. <br>Images and logos come from the original website. 
+		</div>
+		<nav class="flex-container">
+			<img src="images/logo.png" alt="Our Logo" class="flex-item">
+			<a href="index.html" class="flex-item"><p>Home</p></a>
+			<a href="menu.html" class="flex-item"><p>Menu</p></a>
+			<a href="orders.html" class="flex-item"><p>Orders/Reservations</p></a>
+			<a href="gallery.html" class="flex-item"><p>Reviews/Gallery</p></a>
+		</nav>
+
+		<!--
+			<fieldset  id="left">
+				<legend>Filter the menu</legend>
+				<form name="fillme" action="mailto:definitelyNotMyRealEmail@fakeplace.com" onsubmit="return validateForm()" method="post">
+					<input type="checkbox" name="filter" value="All">All
+					<input type="checkbox" name="filter" value="Breakfast">Breakfast
+  					<input type="checkbox" name="filter" value="Lunch">Lunch
+  					<input type="checkbox" name="filter" value="Vegan">Vegan
+  					<input type="submit" value="Submit">
+				</form>
+			</fieldset>
+		</div>
+		-->
+
+			<div class="display">
+				<h1 tabindex="0">Interactive Menu Section</h1>
+				<h2>Filter Section</h2>
+				<p>Choose a filter with the buttons below.</p>
+
+			<!--
+			<div id="filterB">
+				<h4 id="break1"></h4>
+				<p id="break1desc"></p>
+			</div>
+			<div id="filterB">
+				<h4 id="break2"></h4>
+				<p id="break2desc"></p>
+			</div>
+			<div id="filterV">
+				<h4 id="break3"></h4>
+				<p id="break3desc"></p>
+			</div>
+			<div id="filterL">
+				<h4 id="lunch1"></h4>
+				<p id="lunch1desc"></p>
+			</div>
+			<div id="filterV">
+				<h4 id="lunch2"></h4>
+				<p id="lunch2desc"></p>
+			</div>
+			<div id="filterL">
+				<h4 id="lunch3"></h4>
+				<p id="lunch3desc"></p>
+			</div>
+			-->
+			<div id="myBtnContainer">
+  				<button class="btn active" onclick="filterSelection('all'); updateMessage();">Show all</button>
+  				<button class="btn" onclick="filterSelection('breakfast')">Breakfast</button>
+  				<button class="btn" onclick="filterSelection('lunch')">Lunch</button>
+  				<button class="btn" onclick="filterSelection('vegan')">Vegan</button>
+  				<button class="btn" onclick="filterSelection('non-egg')">Egg Allergy</button>
+  				<button class="btn" onclick="filterSelection('non-shell')">Shellfish Allergy</button>
+
+
+			</div>
+			<div class="container">
+  				<div class="filterDiv breakfast non-shell">
+  					<h4 id="break1">Breakfast 1</h4>
+  					<p>Grilled cage-free, hormone-free, and antibiotic-free chicken breast with any two styles of egg.</p>
+  				</div>
+  				<div class="filterDiv breakfast non-shell">
+  					<h4 id="break2">Breakfast 2</h4>
+  					<p>Omelette with ham, onions, mushroom, tomato and cheddar cheese.</p>
+  				</div>
+  				<div class="filterDiv breakfast non-egg non-shell vegan">
+  					<h4 id="break3">Breakfast 3</h4>
+  					<p>Served with fresh baby arugula and Carribean salsa topped with fresh avocado.</p>
+  				</div>
+  				<div class="filterDiv lunch non-shell non-egg">
+  					<h4 id="lunch1">Lunch 1</h4>
+  					<p>8 oz 100% Black Angus burger with arugula, homemade Dijon mustard, red onion, tomato and Gorgonzola cheese.</p>
+  				</div>
+  				<div class="filterDiv lunch non-shell non-egg vegan">
+  					<h4 id="lunch2">Lunch 2</h4>
+  					<p>Open faced burger with spinach, onion and vegenaise served on pita bread.</p>
+  				</div>
+  				<div class="filterDiv lunch non-egg">
+  					<h4 id="lunch3">Lunch 3</h4>
+  					<p>Porcini mushroom risotto with fresh seared scallops.</p>
+  				</div>
+			</div>
+  			</div>
+
+		<script src="js/menu.js"></script>
+
+		<div class="menus">
+			<h3 tabindex="0">Check Out All Our Menus</h3>
+
+			<div class="left">
+				<img src="images/green-menu_breakfast_2021.png" alt="Breakfast Menu" tabindex="0">
+			</div>
+			<div class="right">
+				<img src="images/green-menu_2021_lunch.png" alt="Lunch Menu" tabindex="0">
+			</div>
+			<div class="left">
+				<img src="images/Dinnernew1stpagecopy.jpg" alt="Dinner Menu 1" tabindex="0">
+			</div>
+			<div class="right">
+				<img src="images/Dinnernew2stpage2.jpg" alt="Dinner Menu 2" tabindex="0">
+			</div>
+			<div class="left">
+				<img src="images/drinks-menu-2021.png" alt="Drinks Menu" tabindex="0">
+			</div>
+			<div class="right">
+				<img src="images/CocktailsAndDessertsMenu.png" alt="Cocktails and Desert Menu" tabindex="0">
+			</div>
+
+			<div class=" left">
+				<img src="images/wines_2021.jpg" alt="Wines Menu" tabindex="0">
+			</div>
+		</div>
+
+	<footer>
+		<h4>ALL RIGHTS RESERVED © TAMAS BENKOVICS 2021</h4>
+	</footer>
+
+	</body>
+</html>

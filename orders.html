@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>Sunnyside Cafe Orders/Reservations</title>
+		<link href="css/orders.css" rel="stylesheet">
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<div class="disclaimer">
+			<p>Disclaimer: This is not the actual Sunnyside Cafe Website. This is a student project to redesign the site. <br>Images and logos come from the original website. 
+		</div>
+		<nav class="flex-container">
+			<img src="images/logo.png" alt="Our Logo" class="flex-item">
+			<a href="index.html" class="flex-item"><p>Home</p></a>
+			<a href="menu.html" class="flex-item"><p>Menu</p></a>
+			<a href="orders.html" class="flex-item"><p>Orders/Reservations</p></a>
+			<a href="gallery.html" class="flex-item"><p>Reviews/Gallery</p></a>
+		</nav>
+
+		<div class="title">
+			<h1>Want some Takeout or a Reservation?</h1>
+			<h3>Orders</h3>
+			<fieldset  id="left">
+				<legend>Order Form</legend>
+				<h4>Select Your items</h4>
+				<form name="fillme" method="post">
+  					Entree<select name="entree">
+  							<option value="chicken">Chicken and Eggs</option>
+  							<option value="ham">Deluxe Ham Omelette</option>
+  							<option value="pancake">Savory Chickpea Pancakes</option>
+  							<option value="burg">The Sunnyside Burger</option>
+  							<option value="chickpea">Chick Pea Burger</option>
+  							<option value="risotto">Scallops Risotto</option>
+  							<option value="none">None</option>
+  						</select>
+
+  					Sides<select name="side">
+  							<option value="potato">Potato Pancake(For Egg Dishes)</option>
+  							<option value="fruit">Fruit Medley(For Eggs Dishes)</option>
+  							<option value="none">None</option>
+  						</select>
+  					<input type="submit" onclick="updateMessage()" value="ADD">
+				</form>
+
+
+				<div id="added">
+					<p>Chicken and Eggs ($13)</p>
+					<p>Potato Pancakes (Side)</p>
+				</div>
+				<br>
+
+				<h4>Total Cost</h4>
+				<p id="cost">$13</p>
+				<br>
+
+				<h4>Payment Information</h4>
+				<form name="payment" method="post">
+					<input type="checkbox" name="paymentChoice" value="Credit">Credit
+					<input type="checkbox" name="paymentChoice" value="Debit">Debit
+					<br>
+					Name<input type="text" name="name" required="required">
+					Phone Number<input type="tel" name="number" required="required">
+					<br>
+					Card Number<input type="text" name="cardnum" required="required">
+					Security<input type="text" name="security" required="required">
+  					<input type="submit" value="Complete Transaction">
+				</form>
+			</fieldset>
+		</div>
+
+		<div class="display">
+			<h3>Reservations</h3>
+			<fieldset  id="left">
+				<legend>Set Reservation Form</legend>
+				<form name="fillme" method="post">
+					Date<input type="date" required="required" name="date">
+  					Time<select name="time">
+  							<option value="8AM">8 AM</option>
+  							<option value="9AM">9 AM</option>
+  							<option value="10AM">10 AM</option>
+  							<option value="11AM">11 AM</option>
+  							<option value="12PM">12 PM</option>
+  							<option value="1PM">1 PM</option>
+  							<option value="2PM">2 PM</option>
+  							<option value="3PM">3 PM</option>
+  						</select>
+  					Party Size<input type="text" name="size" required="required">
+  					Party Name<input type="text" name="name" required="required">
+  					<input type="submit" value="Reserve">
+				</form>
+			</fieldset>
+			<h3>You can also call us to set it up!</h3>
+			<p>Call us at 941-359-9500</p>
+			<br>
+		</div>
+
+	<footer>
+		<h4>ALL RIGHTS RESERVED © TAMAS BENKOVICS 2021</h4>
+	</footer>
+
+	<script src="js/orders.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+	margin: 0;
+	background: #EDEEFF;
+	overflow: auto;
+	width: 100%;
+}
+
+h1{
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	color: #EDEEFF;
+	padding: 0;
+}
+
+h2{
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	color: #EDEEFF;
+	padding: 0;
+}
+
+h3{
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	color: #EDEEFF;
+	padding: 0;
+}
+
+h4{
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	color: #EDEEFF;
+	padding: 0;
+}
+
+
+p{
+	font-family: "Arial", sans-serif;
+	text-align: center;
+	color: #EDEEFF;
+}
+
+button {
+	text-align: center;
+	vertical-align: middle;
+	padding: 1em;
+	height: 30% ;
+	background: linear-gradient(to bottom right, #cc0000, #D5A932);
+	width: 40%;
+}
+
+nav {
+	overflow: auto;
+	z-index: 100;
+	width: 88%;
+	height: 15%;
+	min-width: ;
+}
+
+.disclaimer {
+	margin: 0%;
+	width: 88%;
+	border-left: 5em solid #EDEEFF;
+	border-right: 5em solid #EDEEFF;
+	background-color: #2F322A;
+}
+
+.flex-container {
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	max-height: 15%;
+	background-color: #06501f;
+	align-items: center;
+	max-width: 100%;
+	border-left: 5em solid #EDEEFF;
+	border-right: 5em solid #EDEEFF;
+}
+
+.flex-item {
+	display: inline-block;
+	margin-top: 0;
+	line-height: 0;
+	color: #EDEEFF;
+	font-weight: bold;
+	font-size: 1.5em;
+	flex-basis: content;
+	max-width: 30%;
+	max-height: 100%;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	padding-right: 0.25em;
+	padding-left: 0.25em;
+}
+
+.flex-item:hover {
+	background: #1A6F37;
+	color: #EE5226 ;
+}
+
+.banner{
+	width: 88% ;
+	max-height: 10%;
+	border-left: 5em solid #EDEEFF;
+	border-right: 5em solid #EDEEFF;
+}
+
+.banner img{
+	width: 100%;
+}
+
+.about {
+	width: 88%;
+	overflow: auto;
+	background-color: #06501f;
+	border-left: 5em solid #EDEEFF;
+	border-right: 5em solid #EDEEFF;
+	display: inline-flex;
+}
+
+.card {
+  /*Add shadows to create the "card" effect*/
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+  transition: 0.3s;
+	max-width: 50%;
+	min-width: 450px;
+  background: linear-gradient(to bottom right, #cc0000, #D5A932);
+  border-radius: 10px;
+}
+
+
+/*On mouse-over, add a deeper shadow*/
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+/*Add some padding inside the card container*/
+.container {
+  padding: 2px 16px;
+}
+
+.info{
+	max-width: 60%;
+	text-align: center;
+	padding: 1em;
+}
+
+.check {
+	width: 88%;
+	overflow: auto;
+	background-color: #06501f;
+	border-left: 5em solid #EDEEFF;
+	border-right: 5em solid #EDEEFF;
+	display: inline-flex;
+	border-top: 0.5em solid #EDEEFF;
+}
+
+.social{
+	max-width: 40%;
+	min-width: 450px;
+}
+
+.social img{
+	max-width: 125px;
+	max-height: 125px;
+	min-width: 100px;
+	min-height: 100px;
+	padding: 0.5em;
+	padding-top: 1em;
+}
+
+
+.times{
+	width: 70%;
+	border-radius: 10px;
+}
+
+.times img{
+	max-width: 815px;
+	max-height: 600px;
+	min-width: 715px;
+	min-height: 500px;
+	width: 100%;
+}
+
+footer{
+	background-color: #2F322A;
+	margin-top: 0;
+	border-left: 5em solid #EDEEFF;
+	border-right: 5em solid #EDEEFF;
+	width: 88%;
+}

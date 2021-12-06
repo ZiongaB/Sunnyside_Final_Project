@@ -1,3 +1,5 @@
+/*General styling for base elements*/
+
 body {
 	margin: 0;
 	background: #EDEEFF;
@@ -48,16 +50,7 @@ p{
 	color: #EDEEFF;
 }
 
-/*
-button {
-	text-align: center;
-	vertical-align: middle;
-	padding: 1em;
-	height: 30% ;
-	background: linear-gradient(to bottom right, #cc0000, #D5A932);
-	width: 40%;
-}
-*/
+/*The general stylings for the navbar*/
 
 nav {
 	overflow: auto;
@@ -67,6 +60,8 @@ nav {
 	min-width: ;
 }
 
+/*General styling for disclaimer section (includes whitespace to left and right*/
+
 .disclaimer {
 	margin: 0%;
 	width: 88%;
@@ -74,6 +69,10 @@ nav {
 	border-right: 5em solid #EDEEFF;
 	background-color: #2F322A;
 }
+
+/*This upcoming section is full of code that controls the functionality of the
+flexbox nav bar*/
+
 
 .flex-container {
 	display: inline-flex;
@@ -110,6 +109,9 @@ nav {
 	color: #EE5226 ;
 }
 
+/*title, display, and menus sections are essentially just different 
+colored sections that are meant to be containers for the important page content*/
+
 .title {
 	width: 88% ;
 	border-left: 5em solid #EDEEFF;
@@ -132,6 +134,8 @@ nav {
 	overflow-y: scroll;
 }
 
+/*stylings for the position of images in the menu section*/
+
 .left img{
 	width: 45%;
 	padding: 1em;
@@ -148,6 +152,10 @@ nav {
 	width: 45%;
 	padding: 1em;
 }
+
+/*This is the styling and general CSS code for the filtered menu section*/
+/*Code Snippets taken from  
+https://www.w3schools.com/howto/howto_js_filter_elements.asp*/
 
 .filterDiv {
   float: left;

@@ -5,10 +5,16 @@
 		<link href="css/gallery.css" rel="stylesheet">
 		<meta charset="utf-8"/>
 	</head>
+
+		<!--Disclaimer section -->
+
 	<body>
 		<div class="disclaimer">
 			<p>Disclaimer: This is not the actual Sunnyside Cafe Website. This is a student project to redesign the site. <br>Images and logos come from the original website. 
 		</div>
+
+			<!--Navbar made from Flexbox -->
+
 		<nav class="flex-container">
 			<img src="images/logo.png" alt="Our Logo" class="flex-item">
 			<a href="index.html" class="flex-item"><p>Home</p></a>
@@ -16,6 +22,8 @@
 			<a href="orders.html" class="flex-item"><p>Orders/Reservations</p></a>
 			<a href="gallery.html" class="flex-item"><p>Reviews/Gallery</p></a>
 		</nav>
+
+		<!--Section that displays past reviews (taken from website)-->
 
 		<div class="about">
 			<div class="card">
@@ -25,12 +33,16 @@
     				<p>"I was looking for a local/mom and pop place to have dinner last night. My wife said, "Sunnyside? But they're a breakfast place!" I'm sure the breakfast is great and I can't wait to give it a try, but as for dinner, I was impressed by every aspect of the place. It's a cozy atmosphere. Our server was attentive without being smothering. The food was amazing. We had pheasant stuffed crepes, seared tuna salad and a sandwich and all of it was excellent and fresh. Great local-owned place with great food!" -Justin Schwegel July 2021</p>
   				</div>
 			</div>
+
+			<!--Section for uploading reviews (no back end functionality) -->
+			<!--(This was one of my ideas to improve the site. Upload reviews from the site rather than from google.-->
+
 			<div class="info">
 				<h2 tabindex="0">Share Your Sunnyside Experience</h2>
 				<fieldset>
 					<legend>Submit A Review!</legend>
-					<form name="reviews" method="post">
-						Name<input type="text" name="name" required="required">
+					<form name="reviews" method="post" onsubmit="return validateForm()">
+						Name<input type="text" name="name">
 						<br>
 						Review
 						<br>
@@ -41,20 +53,28 @@
 			</div>
 		</div>
 
+		<!--Responsive image grid used as a gallery section (tried to make images larger than the original site's gallery section) (code snippets from https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_img_gallery used in here) -->
+
 		<div class="check">
 			<div class="social">
 				<h3 tabindex="0">Gallery</h3>
-				<img src="images/im1.jpg" alt="An image of one of our dishes">
-				<img src="images/im2.jpg" alt="A sandwhich">
-				<img src="images/im4.jpg" alt="Bagels and something">
-				<img src="images/im5.jpg" alt="Burger">
-				<img src="images/im6.jpg" alt="Fish and Veggies">
-				<img src="images/im7.jpg" alt="Tacos">
-				<img src="images/im9.jpg" alt="A Hardworking Employee">
-				<img src="images/im10.jpg" alt="IDK what this is but it looks good">
-				<img src="images/im11.jpg" alt="A pastry">
-				<img src="images/im12.jpg" alt="A salad">
+				<div class="column">
+					<img src="images/im1.jpg" alt="An image of one of our dishes" style= "width:100%">
+					<img src="images/im2.jpg" alt="A sandwhich" style= "width:100%">
+					<img src="images/im4.jpg" alt="Bagels and something" style= "width:100%">
+					<img src="images/im5.jpg" alt="Burger" style= "width:100%">
+					<img src="images/im6.jpg" alt="Fish and Veggies" style= "width:100%">
+				</div>
+				<div class="column">
+					<img src="images/im7.jpg" alt="Tacos" style= "width:100%">
+					<img src="images/im9.jpg" alt="A Hardworking Employee" style= "width:100%">
+					<img src="images/im10.jpg" alt="IDK what this is but it looks good" style= "width:100%">
+					<img src="images/im11.jpg" alt="A pastry" style= "width:100%">
+					<img src="images/im12.jpg" alt="A salad" style= "width:100%">
+				</div>
 			</div>
+
+			<!--Section for uploading photos (no back end functionality)-->
 
 			<div class="times">
 				<h3>Upload Your Photos!</h3>
@@ -69,8 +89,12 @@
 
 		</div>
 
+		<script src="js/gallery.js"></script>
+
+	<!--Footer -->
+
 	<footer>
-		<h4>ALL RIGHTS RESERVED © TAMAS BENKOVICS 2021</h4>
+		<h4>Student Project by Zachary East</h4>
 	</footer>
 
 	</body>

@@ -1,3 +1,5 @@
+/*General styling for base elements*/
+
 body {
 	margin: 0;
 	background: #EDEEFF;
@@ -57,6 +59,8 @@ button {
 	width: 40%;
 }
 
+/*The general stylings for the navbar*/
+
 nav {
 	overflow: auto;
 	z-index: 100;
@@ -65,6 +69,8 @@ nav {
 	min-width: ;
 }
 
+/*General styling for disclaimer section (includes whitespace to left and right*/
+
 .disclaimer {
 	margin: 0%;
 	width: 88%;
@@ -72,6 +78,9 @@ nav {
 	border-right: 5em solid #EDEEFF;
 	background-color: #2F322A;
 }
+
+/*This upcoming section is full of code that controls the functionality of the
+flexbox nav bar*/
 
 .flex-container {
 	display: inline-flex;
@@ -108,6 +117,10 @@ nav {
 	color: #EE5226 ;
 }
 
+
+/*title, display, and about sections are essentially just different 
+colored sections that are meant to be containers for the important page content*/
+
 .title {
 	width: 88% ;
 	border-left: 5em solid #EDEEFF;
@@ -131,6 +144,9 @@ nav {
 	display: inline-flex;
 }
 
+/*Card stylings with rounded coners and shadow 
+Code taken from https://www.w3schools.com/howto/howto_css_cards.asp*/
+
 .card {
   /*Add shadows to create the "card" effect*/
   box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
@@ -151,6 +167,8 @@ nav {
   padding: 2px 16px;
 }
 
+/*This sectionis just generl stylings for individual sections*/
+
 .info{
 	max-width: 60%;
 	text-align: center;
@@ -170,16 +188,11 @@ nav {
 .social{
 	max-width: 60%;
 	min-width: 450px;
+	display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.social img{
-	max-width: 300px;
-	max-height: 300px;
-	min-width: 250px;
-	min-height: 250px;
-	padding: 0.5em;
-	padding-top: 1em;
-}
 
 .times{
 	width: 40%;
@@ -187,12 +200,43 @@ nav {
 	background-color: #06501f;
 }
 
-.times img{
-	max-width: 815px;
-	max-height: 600px;
-	min-width: 715px;
-	min-height: 500px;
-	width: 100%;
+
+/*This upcoming  section of code is meant to style the responsive grid section.
+Much of the code came from 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_img_gallery*/
+
+/*This specific piece right here breaks the whitespace for my page idk why*/
+* {
+  box-sizing: border-box;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a one column-layout instead of two columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 

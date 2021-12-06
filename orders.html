@@ -6,9 +6,15 @@
 		<meta charset="utf-8"/>
 	</head>
 	<body>
+
+		<!--Disclaimer Section-->
+
 		<div class="disclaimer">
 			<p>Disclaimer: This is not the actual Sunnyside Cafe Website. This is a student project to redesign the site. <br>Images and logos come from the original website. 
 		</div>
+
+		<!--Flexbox-Based Navbar-->
+
 		<nav class="flex-container">
 			<img src="images/logo.png" alt="Our Logo" class="flex-item">
 			<a href="index.html" class="flex-item"><p>Home</p></a>
@@ -16,6 +22,8 @@
 			<a href="orders.html" class="flex-item"><p>Orders/Reservations</p></a>
 			<a href="gallery.html" class="flex-item"><p>Reviews/Gallery</p></a>
 		</nav>
+
+		<!--This is a form based section for making takeout orders. NGL it doesn't work well at all when trying to update the DOM with sections for orders. IDK how to fix it so  ¯\_(ツ)_/¯ Either way this section was something I added cause the original site only had takeout mentioned for when you call them.-->
 
 		<div class="title">
 			<h1>Want some Takeout or a Reservation?</h1>
@@ -42,6 +50,7 @@
   					<input type="submit" onclick="updateMessage()" value="ADD">
 				</form>
 
+				<!--This section is meant to update when the add button is clicked but I did something wrong.-->
 
 				<div id="added">
 					<p>Chicken and Eggs ($13)</p>
@@ -67,6 +76,9 @@
 				</form>
 			</fieldset>
 		</div>
+
+			<!--Set up reservations form-->
+			<!--(old version just integrated yelp and I wanted to fix that-->
 
 		<div class="display">
 			<h3>Reservations</h3>
@@ -94,8 +106,10 @@
 			<br>
 		</div>
 
+	<!--Footer-->
+
 	<footer>
-		<h4>ALL RIGHTS RESERVED © TAMAS BENKOVICS 2021</h4>
+		<h4>Student Project by Zachary East</h4>
 	</footer>
 
 	<script src="js/orders.js"></script>

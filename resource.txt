@@ -1,6 +1,13 @@
 Resources:
-https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
-https://www.w3schools.com/howto/howto_js_slideshow.asp
-https://www.w3schools.com/howto/howto_css_cards.asp
-https://www.w3schools.com/css/css3_gradients.asp
-https://www.w3schools.com/howto/howto_js_filter_elements.asp
+
+Code snippets for css cards and gradient colors from:
+-https://www.w3schools.com/howto/howto_css_cards.asp
+-https://www.w3schools.com/css/css3_gradients.asp
+
+Javascript and CSS for filtered menu section used snippets from:
+-https://www.w3schools.com/howto/howto_js_filter_elements.asp
+
+CSS snippets for responsive image grid from:
+-https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_img_gallery
+
+Other than that, any rested code comes from previous projects and assignments for this class.

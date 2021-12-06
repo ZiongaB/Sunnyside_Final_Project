@@ -1,3 +1,5 @@
+/*This function is meant to add a new element in the DOM but it only 
+works for like half a second IDK what i'm doing wrong.*/
 function updateMessage() {
   var yummy = document.createElement("P");
   yummy.innerText = "You just added an item";

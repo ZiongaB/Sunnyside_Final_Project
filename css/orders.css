@@ -1,3 +1,5 @@
+/*General styling for base elements*/
+
 body {
 	margin: 0;
 	background: #EDEEFF;
@@ -57,6 +59,8 @@ button {
 	width: 40%;
 }
 
+/*The general stylings for the navbar*/
+
 nav {
 	overflow: auto;
 	z-index: 100;
@@ -65,6 +69,8 @@ nav {
 	min-width: ;
 }
 
+/*General styling for disclaimer section (includes whitespace to left and right*/
+
 .disclaimer {
 	margin: 0%;
 	width: 88%;
@@ -72,6 +78,9 @@ nav {
 	border-right: 5em solid #EDEEFF;
 	background-color: #2F322A;
 }
+
+/*This upcoming section is full of code that controls the functionality of the
+flexbox nav bar*/
 
 .flex-container {
 	display: inline-flex;
@@ -108,6 +117,9 @@ nav {
 	color: #EE5226 ;
 }
 
+/*title and display sections are essentially just different 
+colored sections that are meant to be containers for the important page content*/
+
 .title {
 	width: 88% ;
 	border-left: 5em solid #EDEEFF;
@@ -121,6 +133,8 @@ nav {
 	border-right: 5em solid #EDEEFF;
 	background: linear-gradient(to bottom right, #cc0000, #D5A932);
 }
+
+/*Stylings for sections related to inserted elements*/
 
 #added {
 	float: left;

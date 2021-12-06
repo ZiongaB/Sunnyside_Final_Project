@@ -1,0 +1,27 @@
+Features and Requirements:
+
+
+HTML/CSS REQUIREMENTS:
+
+-Flexbox: (The Navbar is a flexbox)
+-Top navigation bar: (Navbar at the top of every page)
+-Interactive buttons 
+-Works on mobile and different size browsers
+-Compatible with Chrome and any other browser  of your choice): (Tested with Safari and Chrome)
+-CSS card layout
+-Dropdowns/checkboxes/radio buttons
+-CSS icons/ CSS rounded corners 
+-CSS background images
+-1 page with a responsive image grid
+
+
+JS ELEMENTS:
+-Functions 
+-Conditionals
+-Loops
+-Document object structure 
+-Forms & validation checks 
+-2 Methods that access objects / constructors
+innerHTML 
+Events and 
+

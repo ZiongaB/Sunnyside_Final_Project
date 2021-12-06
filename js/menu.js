@@ -1,3 +1,6 @@
+/*This function is meant to update the contents of the 
+menu section when the page is loaded*/
+
 function updateMessage() {
 
   var item1 = {
@@ -47,27 +50,16 @@ function updateMessage() {
 
   var scal = document.getElementById('lunch3');
   scal.textContent = item6.name;
-
-  /*var tastes = document.getElementById('break1desc');
-  tastes.textContent = item1.description;
-
-  var ham = document.getElementById('break2desc');
-  ham.textContent = item2.description;
-
-  var cake = document.getElementById('break3desc');
-  cake.textContent = item3.description;
-
-  var black = document.getElementById('lunch1desc');
-  black.textContent = item4.description;
-
-  var open = document.getElementById('lunch2desc');
-  open.textContent = item5.description;
-
-  var sea = document.getElementById('lunch3desc');
-  sea.textContent = item6.description;*/
 }
 
 updateMessage();
+
+
+/*This section of code uses loops and conditionals in order to change what 
+sections of the filtered menu are visible when the button is clicked*/
+
+/*Code snippets taken from 
+https://www.w3schools.com/howto/howto_js_filter_elements.asp*/
 
 filterSelection("all")
 function filterSelection(c) {

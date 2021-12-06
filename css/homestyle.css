@@ -1,3 +1,5 @@
+/*General styling for base elements*/
+
 body {
 	margin: 0;
 	background: #EDEEFF;
@@ -57,6 +59,8 @@ button {
 	width: 40%;
 }
 
+/*The general stylings for the navbar*/
+
 nav {
 	overflow: auto;
 	z-index: 100;
@@ -65,6 +69,8 @@ nav {
 	min-width: ;
 }
 
+/*General styling for disclaimer section (includes whitespace to left and right*/
+
 .disclaimer {
 	margin: 0%;
 	width: 88%;
@@ -72,6 +78,9 @@ nav {
 	border-right: 5em solid #EDEEFF;
 	background-color: #2F322A;
 }
+
+/*This upcoming section is full of code that controls the functionality of the
+flexbox nav bar*/
 
 .flex-container {
 	display: inline-flex;
@@ -119,6 +128,9 @@ nav {
 	width: 100%;
 }
 
+
+/*General styling for main body section*/
+
 .about {
 	width: 88%;
 	overflow: auto;
@@ -127,6 +139,9 @@ nav {
 	border-right: 5em solid #EDEEFF;
 	display: inline-flex;
 }
+
+/*Card stylings with rounded coners and shadow 
+Code taken from https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 .card {
   /*Add shadows to create the "card" effect*/
@@ -164,6 +179,8 @@ nav {
 	display: inline-flex;
 	border-top: 0.5em solid #EDEEFF;
 }
+
+/*stylings for social media and Covid hours images*/
 
 .social{
 	max-width: 40%;
